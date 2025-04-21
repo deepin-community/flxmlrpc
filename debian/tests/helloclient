@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -eux
+
+cd test
+make clean
+make
+./HelloServer 4444 &
+serverpid=$!
+trap "rm -f out; kill $serverpid" EXIT
+sleep 1
+./HelloClient localhost 4444 > out 2>&1
+cat out
+! grep -i error out

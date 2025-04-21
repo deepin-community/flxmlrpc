@@ -1,0 +1,9 @@
+AUTHOR: Dave Freese
+CALLSIGN: W1HKJ
+EMAIL: iam_w1hkj (at) w1hkj [dot] com
+
+Chris Morley is the original author of XmlRpc++
+
+Although no code was re-used, the design and structure of the library is based
+upon the py-Fl_XmlRpc library implementation.  The base64 decoder/encoder is by
+Konstantin Pilipchuk.

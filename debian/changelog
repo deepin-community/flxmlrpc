@@ -1,5 +1,51 @@
-template-repository (1.0-1) unstable; urgency=medium
+flxmlrpc (0.1.4-6) unstable; urgency=low
 
-  * Initial release
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Set debhelper-compat version in Build-Depends.
+  * Update standards version to 4.5.0, no changes needed.
+  * Remove Section on libflxmlrpc1 that duplicates source.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Christoph Berg ]
+  * Retire Kamal from Uploaders, thanks for your work!
+
+ -- Christoph Berg <myon@debian.org>  Wed, 05 Jan 2022 12:35:31 +0100
+
+flxmlrpc (0.1.4-5) unstable; urgency=medium
+
+  * tests: Sleep a bit to allow HelloServer to start. (Closes: #922847)
+  * Add debian/gitlab-ci.yml.
+
+ -- Christoph Berg <myon@debian.org>  Thu, 21 Feb 2019 14:14:49 +0100
+
+flxmlrpc (0.1.4-4) unstable; urgency=medium
+
+  * Let the dev package depend on pkg-config; the autopkgtest needs it.
+
+ -- Christoph Berg <myon@debian.org>  Fri, 04 Jan 2019 20:03:02 +0100
+
+flxmlrpc (0.1.4-3) unstable; urgency=medium
+
+  * C++ symbols files vary across architectures which is too much effort to
+    maintain, so ignore differences for now.
+
+ -- Christoph Berg <myon@debian.org>  Thu, 03 Jan 2019 21:28:44 +0100
+
+flxmlrpc (0.1.4-2) unstable; urgency=medium
+
+  * Create package repository on salsa.
+  * Add libflxmlrpc1.symbols file.
+  * Priority: optional.
+  * Bump to DH 12 so autotools are automatically triggered.
+  * Set Multi-Arch: same on lib and dev package.
+  * debian/not-installed: We don't install the libtool library.
+  * Add autopkgtest.
+  * Add myself to Uploaders.
+
+ -- Christoph Berg <myon@debian.org>  Thu, 03 Jan 2019 19:54:47 +0100
+
+flxmlrpc (0.1.4-1) unstable; urgency=low
+
+  * Initial Debian release (Closes: #785745)
+
+ -- Kamal Mostafa <kamal@whence.com>  Tue, 19 May 2015 09:55:36 -0700

@@ -1,0 +1,24 @@
+flxmlrpc Library
+
+This is version 0.1 of flxmlrpc, an implementation of the XmlRpc protocol
+written in C++, based upon XmlRpc++0.7 and modified to provide additional XmlRpc
+Variable types.  It is used in fldigi, flrig, flnet, flmsg, flarq, flamp, fllog;
+a suite of programs written for amateur radio emergency communications.
+
+flxmlrpc is designed to make it easy to incorporate xmlrpc client and server
+support into C++ applications. Or use both client and server objects in your 
+application for easy peer-to-peer support.
+
+Features
+
+    Easy     This library is easy to incorporate into C++ applications. No other
+             libraries are required, other than your system's socket libraries.
+             Simple XML parsing and HTTP support are built in.
+
+    Fast     All IO is non-blocking, so a slow client or network will not slow
+             down the server.
+
+    Portable Written in standard C++ to the POSIX and Windows sockets APIs.
+             You do need a fairly recent compiler, g++ 3.1 or greater.
+
+    Free     This library is released under the GNU LGPL.

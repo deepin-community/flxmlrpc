@@ -1,4 +1,13 @@
 #!/usr/bin/make -f
 
+# we have a symbols file (created on amd64), but C++ symbols files are hard, so
+# don't fail on other architectures or compiler versions
+# https://www.eyrie.org/~eagle/journal/2012-02/001.html
+export DPKG_GENSYMBOLS_CHECK_LEVEL=0
+
+override_dh_auto_clean:
+	dh_auto_clean
+	$(MAKE) -C test clean
+
 %:
 	dh $@
