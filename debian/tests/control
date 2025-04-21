@@ -1,0 +1,3 @@
+Depends: bash, build-essential, libflxmlrpc-dev
+Tests: helloclient
+Restrictions: allow-stderr

@@ -1,0 +1,16 @@
+flxmlrpc release notes
+
+Ported from xmlrpcpp by Chris Morley
+
+1. Better handling of fault responses: server methods can throw an
+   Fl_XmlRpcException to return a fault and Fl_XmlRpcClient has a new method
+   to test whether the last response was a fault.
+
+2. Support for system.listMethods and system.methodHelp from the introspection
+   API.
+
+3. Support for system.multicall to process multiple requests in a single
+   transaction.
+
+4. Doxygen comments in header file, with Doxyfile to create html docs in the
+   include direcotry.
